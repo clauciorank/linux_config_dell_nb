@@ -1,1 +1,1 @@
-sudo apt install flameshot pavucontrol pasystray xrandr btop tty-clock
+sudo apt install flameshot pavucontrol pasystray xrandr btop tty-clock nitrogen xinput
