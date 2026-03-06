@@ -1,1 +1,1 @@
-sudo apt install flameshot pavucontrol pasystray
+sudo apt install flameshot pavucontrol pasystray xrandr btop tty-clock
