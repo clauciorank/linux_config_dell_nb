@@ -1,0 +1,116 @@
+configuration {
+    /* Adicionado filebrowser aqui */
+    modi: "run,drun,window,filebrowser";
+    icon-theme: "Papirus";
+    show-icons: true;
+    terminal: "i3-sensible-terminal";
+    drun-display-format: "{icon} {name}";
+    location: 0;
+    disable-history: false;
+    hide-scrollbar: true;
+    
+    /* Nomes amigáveis na barra inferior */
+    display-drun: "   Apps ";
+    display-run: "   Run ";
+    display-window: " 󰕰  Window ";
+    display-filebrowser: "   Files ";
+    sidebar-mode: true;
+
+    /* Configuração específica do buscador de arquivos */
+    filebrowser {
+        directories-first: true;
+        sorting-method:    "name";
+    }
+}
+
+@theme "/dev/null"
+
+* {
+    bg-col:      #000000;
+    bg-alt:      #1a1a1a;
+    orange-alt:  #FF8C00; 
+    fg-col:      #FFFFFF;
+    
+    width: 600;
+    font: "JetBrainsMono Nerd Font 10";
+    background-color: transparent;
+}
+
+window {
+    height: 360px;
+    border: 2px;
+    border-color: @orange-alt;
+    background-color: @bg-col;
+}
+
+mainbox {
+    background-color: @bg-col;
+    children: [inputbar, listview, mode-switcher];
+}
+
+inputbar {
+    children: [ entry ];
+    background-color: @bg-col;
+    padding: 10px 10px 0px 10px;
+}
+
+entry {
+    padding: 12px;
+    text-color: @fg-col;
+    background-color: @bg-alt;
+    placeholder: "Search Apps or Files...";
+    placeholder-color: @orange-alt;
+}
+
+listview {
+    border: 0px;
+    padding: 6px 0px 0px;
+    margin: 10px;
+    columns: 1;
+    lines: 5;
+    background-color: @bg-col;
+}
+
+element {
+    padding: 8px;
+    background-color: transparent;
+    text-color: @fg-col;
+}
+
+element-icon {
+    size: 24px;
+    padding: 0 10px 0 0;
+    background-color: transparent;
+}
+
+element-text {
+    text-color: inherit;
+    background-color: transparent;
+    vertical-align: 0.5;
+}
+
+element selected {
+    background-color: @orange-alt;
+    text-color: @bg-col;
+}
+
+element-text selected {
+    text-color: @bg-col;
+}
+
+mode-switcher {
+    spacing: 0;
+}
+
+button {
+    padding: 10px;
+    background-color: @bg-alt;
+    text-color: @fg-col;
+    vertical-align: 0.5; 
+    horizontal-align: 0.5;
+}
+
+button selected {
+  background-color: @bg-col;
+  text-color: @orange-alt;
+}
