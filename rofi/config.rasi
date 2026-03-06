@@ -10,10 +10,10 @@ configuration {
     hide-scrollbar: true;
     
     /* Nomes amigáveis na barra inferior */
-    display-drun: "   Apps ";
-    display-run: "   Run ";
-    display-window: " 󰕰  Window ";
-    display-filebrowser: "   Files ";
+    display-drun: " Apps ";
+    display-run: " Run ";
+    display-window: " Window ";
+    display-filebrowser: " Files ";
     sidebar-mode: true;
 
     /* Configuração específica do buscador de arquivos */
@@ -58,7 +58,7 @@ entry {
     padding: 12px;
     text-color: @fg-col;
     background-color: @bg-alt;
-    placeholder: "Search Apps or Files...";
+    placeholder: "";
     placeholder-color: @orange-alt;
 }
 
